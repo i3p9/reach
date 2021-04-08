@@ -4,7 +4,13 @@ Reach automagically searches and figures out the best wifi channel for your netw
 
 ## Usage: 
 
-Clone this repo and run
+First of all, enable the built in airport service on macOS. This command simply copies the `airport` binary into PATH,`usr/local/bin/`so that it can be called from terminal. 
+
+```bash
+sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+```
+
+Then, clone this repo and run
 
 ```bash
 python3 main.py
