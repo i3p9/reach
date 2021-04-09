@@ -46,3 +46,8 @@ def get_noise():
     noise = data[0].lstrip()
     noise = noise.strip("agrCtlNoise: ")
     return noise
+
+if __name__ == '__main__':
+    all_info()
+    get_ssid()
+    get_noise()
